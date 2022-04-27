@@ -9084,6 +9084,13 @@ li > ol {
   line-height: 1;
 }
 
+body {
+  width: 100%;
+  background-image: url("./../../../assets/images/sidebar-wall.png");
+  background-size: 50%;
+  background-repeat: no-repeat;
+}
+
 header {
   background: #0069d9;
   background: -webkit-gradient(linear, left top, right top, from(#0069d9), color-stop(91%, #3cad0a));
@@ -9253,6 +9260,61 @@ header .header__user-area .header__user .header-user__profile {
 
 header .header__user-area .header__user .header-user__icon {
   color: #fff;
+}
+
+.events {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 30%;
+  border-radius: 5px;
+}
+
+.events .events__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px;
+  background-color: blue;
+  border-radius: 5px 5px 0px 0px;
+  color: white;
+}
+
+.events .events__nav .events-nav__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30%;
+}
+
+.events .events__nav .events-nav__title {
+  text-transform: uppercase;
+  color: white;
 }
 
 .ns-box {

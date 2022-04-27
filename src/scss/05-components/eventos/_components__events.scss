@@ -1,0 +1,30 @@
+.events{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30%;
+    border-radius: 5px;
+    .events__nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 5px;
+        background-color: blue;
+        border-radius: 5px 5px 0px 0px;
+        color: white;
+        .events-nav__left{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            width: 30%;
+            
+        }
+        .events-nav__title{
+            text-transform: uppercase;
+            color: white;
+        }
+        
+    }
+}
