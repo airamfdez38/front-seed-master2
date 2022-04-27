@@ -1,0 +1,105 @@
+
+header{
+   background: rgb(0,105,217);
+   background: linear-gradient(90deg, rgba(0,105,217,1) 0%, rgba(60,173,10,1) 91%);
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+
+   .header-logo__img{
+       width: 150px;
+       height: 80px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+      
+   }
+   .header__search{
+       display: flex;
+       flex-direction: row;
+       justify-content: space-around;
+       align-items: center;
+       background-color: #fff;
+       width: 500px;
+       height: 50px;
+       border-radius: 5px;
+        .header-search__input{
+            width: 90%;
+            border: none;   
+        }
+        .search-input__icon{
+            color: rgb(199, 196, 196);
+        }
+   }
+   
+   .header__nav{
+       width: 420px;
+       height: 50px;
+         .header-nav__ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-content: center;
+
+            .nav-ul__li{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 3px;
+                
+
+                .nav-li__icon{
+                    margin-top: 8px;
+                    color: #fff;
+                }
+                .nav-li__link{
+                    color: #fff;
+                }
+            }
+            .nav-ul__li:last-child{
+                justify-content: space-arond;
+            }   
+         }
+   }
+
+   .header__user-area{
+       width: 130px;
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+       justify-content: space-between;
+
+       .header__notification{
+        width: 30px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+       
+            .header-notification__bell  {
+                color: #fff;
+            }
+        }
+        .header__user{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            width: 80px;
+     
+            .header-user__profile{
+                 width: 50px;
+                 
+             }
+             .header-user__icon{
+                 color: #fff;
+             }
+        }
+   
+   
+   }
+   
+  
+}
+
