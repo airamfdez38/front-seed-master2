@@ -11,7 +11,7 @@
     <script type="module" src="../js/front-dev.js"></script>
     <script src="https://kit.fontawesome.com/3c95568781.js" crossorigin="anonymous"></script>
 
-    <title>Header</title>
+    <title>Semilla</title>
 </head> 
 
 <body>
@@ -66,37 +66,51 @@
        
     </header>
     <main>
-        <p>hola</p>
+        
         <!--------EVENTS-------->
         <section class="events">
-            <header class="events__header">
-                <i class="events-header__icon"></i>
-                <h1 class="events-header__title">Eventos</h1>
-                <i class="events-header__menu"></i>
-            </header>
-            <main class="events__main">
-                <h2 class="events-main__title">Hoy</h2>
-                <section class="events-main__info">
-                    <figure>
-                        <img src="" alt="" class="main-info__img">
-                    </figure>
-                    <section class="main-info__container">
-                        <a href="#" class="info-container__title">SKM Wireframes checkpoint</a>
-                        <p class="main-info__text">11:00 a 12:00. Sala 446</p>
+            <nav class="events__nav">
+                <i class="events-nav__icon"></i>
+                <h3 class="events-nav__title">Eventos</h3>
+                <i class="events-nav__menu"></i>
+            </nav>
+            <section class="events__main">
+                <section class="events-main__today">
+                    <h4 class="events-main__title">Hoy</h4>
+                    <section class="events-main__info">
+                        <div class="main-info__hour-container">
+                            <p class="hour-container__text">11:00</p>
+                        </div>
+                        <section class="main-info__container">
+                            <a href="#" class="info-container__title">SKM Wireframes checkpoint</a>
+                            <p class="main-info__text">11:00 a 12:00. Sala 446</p>
+                        </section>
+                        <section class="main-info__container">
+                            <a href="#" class="info-container__title">SKM chill out</a>
+                            <p class="main-info__text">13:00 a 13:40. Sala 446</p>
+                        </section>
                     </section>
-                    <section class="main-info__container">
-                        <a href="#" class="info-container__title">SKM chill out</a>
-                        <p class="main-info__text">13:00 a 13:40. Sala 446</p>
+                    <section class="events-main__info">
+                        <div class="main-info__hour-container">
+                            <p class="hour-container__text">13:00</p>
+                        </div>
+                        <p class="main-info__text"></p>
                     </section>
                 </section>
-                <section class="events-main__info">
-                    <figure>
-                        <img src="" alt="" class="main-info__img">
-                    </figure>
-                    <p class="main-info__text"></p>
-                </section>
+                <section class="events-main__tomorrow">
+                    <h4 class="events-main__title">Mañana</h4>
+                    <section class="events-main__info">
+                        <div class="main-info__hour-container">
+                            <p class="hour-container__text">11:00</p>
+                        </div>
+                        <section class="main-info__container">
+                            <a href="#" class="info-container__title">SKM Wireframes check</a>
+                            <p class="main-info__text">11:00 a 12:00. Sala 446</p>
+                        </section>
+                    </section>
 
-            </main>
+                </section>
+            </section>
         </section>
 
 
