@@ -9273,8 +9273,9 @@ header .header__user-area .header__user .header-user__icon {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 30%;
+  width: 25%;
   border-radius: 5px;
+  margin: 25px;
 }
 
 .events .events__nav {
@@ -9285,13 +9286,14 @@ header .header__user-area .header__user .header-user__icon {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 5px;
-  background-color: blue;
+  padding: 20px 0px;
+  background-color: #0062cc;
   border-radius: 5px 5px 0px 0px;
   color: white;
 }
@@ -9309,12 +9311,17 @@ header .header__user-area .header__user .header-user__icon {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 30%;
+  width: 40%;
+  margin-left: 30px;
 }
 
 .events .events__nav .events-nav__title {
   text-transform: uppercase;
   color: white;
+}
+
+.events .events__nav .fa-ellipsis-vertical {
+  margin-right: 30px;
 }
 
 .ns-box {
