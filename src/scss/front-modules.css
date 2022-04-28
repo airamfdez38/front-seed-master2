@@ -9102,15 +9102,16 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 header .header-logo__img {
-  width: 150px;
+  width: 130px;
   height: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9137,7 +9138,7 @@ header .header__search {
       -ms-flex-align: center;
           align-items: center;
   background-color: #fff;
-  width: 500px;
+  width: 630px;
   height: 50px;
   border-radius: 5px;
 }
@@ -9273,9 +9274,9 @@ header .header__user-area .header__user .header-user__icon {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 25%;
+  width: 20%;
   border-radius: 5px;
-  margin: 25px;
+  margin: 60px 30px;
 }
 
 .events .events__nav {
@@ -9322,6 +9323,202 @@ header .header__user-area .header__user .header-user__icon {
 
 .events .events__nav .fa-ellipsis-vertical {
   margin-right: 30px;
+}
+
+.events .events__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #fff;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.events .events__main .events-main__today {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 20px 30px 20px 30px;
+  width: 80%;
+}
+
+.events .events__main .events-main__today .events-main__title {
+  color: #0062cc;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.events .events__main .events-main__today .events-main__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+}
+
+.events .events__main .events-main__today .events-main__info .main-info__hour-container {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #0062cc;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.events .events__main .events-main__today .events-main__info .main-info__hour-container .hour-container__text {
+  font-size: 1rem;
+  margin: auto;
+}
+
+.events .events__main .events-main__today .events-main__info .main-info__container {
+  margin-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.events .events__main .events-main__today .events-main__info .main-info__container .info-container__title:first-of-type {
+  width: 70%;
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
+  margin-top: 10px;
+}
+
+.events .events__main .events-main__today .events-main__info .main-info__container .info-container__title {
+  color: #0062cc;
+  text-decoration: underline;
+}
+
+.events .events__main .events-main__tomorrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0px 30px 20px 30px;
+  width: 80%;
+}
+
+.events .events__main .events-main__tomorrow .main-tomorrow__title {
+  color: #0062cc;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.events .events__main .events-main__tomorrow .main-tomorrow__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+}
+
+.events .events__main .events-main__tomorrow .main-tomorrow__info .tomorrow-info__hour-container {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #0062cc;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.events .events__main .events-main__tomorrow .main-tomorrow__info .tomorrow-info__hour-container .tomorrow-hour-container__text {
+  font-size: 1rem;
+  margin: auto;
+}
+
+.events .events__main .events-main__tomorrow .main-tomorrow__info .main-tomorrow__container {
+  margin-left: 10px;
+}
+
+.events .events__main .events-main__tomorrow .main-tomorrow__info .main-tomorrow__container .tomorrow-container__title {
+  color: #0062cc;
+  text-decoration: underline;
+}
+
+.events .events__main .events__see-more {
+  border-top: 1px solid rgba(193, 191, 191, 0.9);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px;
+  color: #0062cc;
+}
+
+.events .events__main .events__see-more .see-more__limk {
+  font-weight: bold;
+}
+
+.events .events__main .events__see-more .fa-angle-down {
+  margin-left: 5px;
 }
 
 .ns-box {
