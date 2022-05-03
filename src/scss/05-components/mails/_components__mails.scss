@@ -1,16 +1,30 @@
 .mails{
-    width: 55%;
-    .mails-header__left
+    width: 50%;
+    
     .mails__main{
-        display:flex;
-        flex-direction: column;
-        justify-content: space-between;
+        align-items: center;
+        
         .mails-main__user-mail{
             display: flex;
             flex-direction: column;
+            justify-content: center;
             padding: 20px;
+            border-bottom: 1px solid color(default-light);
             .user-mail__data{
-                color:rgba(193, 191, 191, 0.9);
+                color: color(default);
+            }
+            .user-mail__info{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                width: 220px;
+                .user-mail__img{
+                    width: 25px;
+                }
+            }
+            .user-mail__title{
+                color:color(primary-dark);
+                text-decoration: underline;
             }
     
         }  

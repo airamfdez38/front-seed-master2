@@ -9276,12 +9276,6 @@ main {
   width: 20%;
 }
 
-.events .events__main {
-  border-radius: 0px 0px 5px 5px;
-  -webkit-box-shadow: 0px 1px 1px 1px #aaa9a9;
-          box-shadow: 0px 1px 1px 1px #aaa9a9;
-}
-
 .events .events__main .events-main__today {
   margin: 20px 30px 20px 30px;
   width: 80%;
@@ -9392,10 +9386,16 @@ main {
 }
 
 .mails {
-  width: 55%;
+  width: 50%;
 }
 
-.mails .mails-header__left .mails__main {
+.mails .mails__main {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mails .mails__main .mails-main__user-mail {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9403,28 +9403,131 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.mails .mails-header__left .mails__main .mails-main__user-mail {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 20px;
+  border-bottom: 1px solid #d6d8db;
 }
 
-.mails .mails-header__left .mails__main .mails-main__user-mail .user-mail__data {
-  color: rgba(193, 191, 191, 0.9);
+.mails .mails__main .mails-main__user-mail .user-mail__data {
+  color: #6c757d;
+}
+
+.mails .mails__main .mails-main__user-mail .user-mail__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 220px;
+}
+
+.mails .mails__main .mails-main__user-mail .user-mail__info .user-mail__img {
+  width: 25px;
+}
+
+.mails .mails__main .mails-main__user-mail .user-mail__title {
+  color: #0069d9;
+  text-decoration: underline;
 }
 
 .contacts {
-  width: 15%;
+  width: 20%;
+}
+
+.contacts .component__nav {
+  width: 100%;
+}
+
+.contacts .component__nav .component-nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #cce5ff;
+  color: #0069d9;
+}
+
+.contacts .component__nav .component-nav__list .nav-list__link {
+  padding: 10px;
+}
+
+.contacts .component-nav__list:first-of-type {
+  font-weight: bolder;
+}
+
+.contacts .contact-main__container {
+  width: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 10px;
+  border-bottom: 1px solid #0069d9;
+  margin: 5px auto;
+}
+
+.contacts .contact-main__container .contact-main-container__img {
+  width: 50px;
+}
+
+.contacts .contact-main__container .contact-main-container__middle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contacts .contact-main__container .contact-main-container__middle .contact-main-container__name {
+  color: #0069d9;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.contacts .contact-main__container .contact-main-container__middle .contact-main-container__info {
+  margin-top: 5px;
+}
+
+.contacts .contact-main__container .fa-angle-down {
+  color: #0069d9;
+}
+
+.contacts .contact-main__container:last-of-type {
+  border-bottom: 0px;
+  margin-bottom: 0%;
 }
 
 .notifications {
@@ -9570,19 +9673,21 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 40%;
-  margin-left: 30px;
+  width: auto;
+  margin-left: 20px;
 }
 
 .general .general__header .general-header__title {
   text-transform: uppercase;
   color: white;
   font-size: 1.1rem;
+  margin-left: 10px;
 }
 
 .general .general__header .fa-ellipsis-vertical {
@@ -9597,10 +9702,13 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: #fff;
+  border-radius: 0px 0px 5px 5px;
+  -webkit-box-shadow: 0px 1px 1px 1px #aaa9a9;
+          box-shadow: 0px 1px 1px 1px #aaa9a9;
 }
 
 .general .general__hour-container {
@@ -9645,7 +9753,7 @@ main {
       -ms-flex-align: center;
           align-items: center;
   padding: 15px;
-  color: #0062cc;
+  color: #007bff;
 }
 
 .general .general__see-more .see-more__limk {

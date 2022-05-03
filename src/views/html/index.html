@@ -71,7 +71,7 @@
         <section class="events general">
             <section class="general__header">
                 <div class="general-header__left">
-                    <i class="general-header__icon fa-solid fa-calendar-days fa-xl"></i>
+                    <i class="general-header__icon fa-solid fa-calendar-days fa-lg"></i>
                     <h5 class="general-header__title">Eventos</h5>
                 </div>
                 <i class="fa-solid fa-ellipsis-vertical"></i>
@@ -124,17 +124,17 @@
         <section class="mails general">
             <section class=" general__header">
                 <div class=" mails-header__left general-header__left">
-                    <i class="general-header__icon fa-solid fa-envelope fa-xl"></i>
+                    <i class="general-header__icon fa-solid fa-envelope fa-lg"></i>
                     <h5 class="general-header__title">Mails</h5>
                 </div>
                 <i class="fa-solid fa-ellipsis-vertical"></i>
             </section>
-            <section class="mails__main">
+            <section class="mails__main general__main">
                 <section class="mails-main__user-mail">
                     <p class="user-mail__data">20/06/2017 - 13:00</p>
                     <div class="user-mail__info">
                         <figure class="user-mail__img">
-                            <img src="" alt="Foto usuario">
+                            <img src="./../../assets/images/Francisco_img.PNG" alt="Foto usuario">
                         </figure>
                         <p class="user-mail__name">Francisco Javier Fernández</p>
                     </div>
@@ -146,7 +146,7 @@
                     <p class="user-mail__data">20/06/2017 - 13:00</p>
                     <div class="user-mail__info">
                         <figure class="user-mail__img">
-                            <img src="" alt="Foto usuario">
+                            <img src="./../../assets/images/Francisco_img.PNG" alt="Foto usuario">
                         </figure>
                         <p class="user-mail__name">Francisco Javier Fernández</p>
                     </div>
@@ -158,7 +158,7 @@
                     <p class="user-mail__data">20/06/2017 - 13:00</p>
                     <div class="user-mail__info">
                         <figure class="user-mail__img">
-                            <img src="" alt="Foto usuario">
+                            <img src="./../../assets/images/Francisco_img.PNG" alt="Foto usuario">
                         </figure>
                         <p class="user-mail__name">Francisco Javier Fernández</p>
                     </div>
@@ -178,68 +178,81 @@
         <section class="contacts general">
             <section class="general__header">
                 <div class="general-header__left">
-                    <i class="general-header__icon fa-solid fa-users fa-xl"></i>
+                    <i class="general-header__icon fa-solid fa-users fa-lg"></i>
                     <h5 class="general-header__title">Mis contactos</h5>
                 </div>
                 <i class="fa-solid fa-ellipsis-vertical"></i>
             </section>
-            <section class="contacts__nav">
-                <nav class="component__nav">
-                    <ul class="component-nav__list">
-                        <li class="component-nav__link"><a href="">Contacto</a></li>
-                        <li class="component-nav__link"><a href="">Grupo</a></li>
-                        <li class="component-nav__link"><a href="">Relación</a></li>       
-                    </ul>
-                </nav>
-            </section>
-            <section class="contact__main">
+            
+            <nav class="component__nav">
+                <ul class="component-nav__list">
+                    <li class="nav-list__link"><a href="" class="list-link__anchor">Contacto</a></li>
+                    <li class="nav-list__link"><a href="" class="list-link__anchor">Grupo</a></li>
+                    <li class="nav-list__link"><a href=""  class="list-link__anchor">Relación</a></li>       
+                </ul>
+            </nav>
+            
+            <section class="contact__main general__main">
                 <section class="contact-main__container">
                     <figure class="contact-main-container__img">
-                        <img src="" alt="Foto de contacto">
+                        <img src="./../../assets/images/Raquel_img.PNG" alt="Foto de contacto">
                     </figure>
-                    <p class="contact-main-container__name">Raquel Laguna Soriano</p>
+                    <div class="contact-main-container__middle">
+                        <p class="contact-main-container__name">Raquel Laguna Soriano</p>
+                        <p class="contact-main-container__info">Leader-ExD</p>
+                    </div>
                     <i class="fa-solid fa-angle-down"></i>
-                    <p class="contact-main-container__info">Leader-ExD</p>
+        
                 </section>
                 <section class="contact-main__container">
                     <figure class="contact-main-container__img">
-                        <img src="" alt="Foto de contacto">
+                        <img src="./../../assets/images/Alvaro_img.PNG" alt="Foto de contacto">
                     </figure>
-                    <p class="contact-main-container__name">Álvaro Ruiz Miranda</p>
+                    <div class="contact-main-container__middle">
+                        <p class="contact-main-container__name">Álvaro Ruiz Miranda</p>
+                        <p class="contact-main-container__info">Student-IT</p>
+                    </div>
                     <i class="fa-solid fa-angle-down"></i>
-                    <p class="contact-main-container__info">Student-IT</p>
                 </section>
                 <section class="contact-main__container">
                     <figure class="contact-main-container__img">
-                        <img src="" alt="Foto de contacto">
+                        <img src="./../../assets/images/Maria_img.PNG" alt="Foto de contacto">
                     </figure>
-                    <p class="contact-main-container__name">María López Segarra</p>
+                    <div class="contact-main-container__middle">
+                        <p class="contact-main-container__name">María López Segarra</p>
+                        <p class="contact-main-container__info">Student-ExD</p>
+                    </div>
                     <i class="fa-solid fa-angle-down"></i>
-                    <p class="contact-main-container__info">Student-ExD</p>
                 </section>
                 <section class="contact-main__container">
                     <figure class="contact-main-container__img">
-                        <img src="" alt="Foto de contacto">
+                        <img src="./../../assets/images/Miguel_img.PNG" alt="Foto de contacto">
                     </figure>
-                    <p class="contact-main-container__name">Miguel Pérez Lobera</p>
+                    <div class="contact-main-container__middle">
+                        <p class="contact-main-container__name">Miguel Pérez Lobera</p>
+                        <p class="contact-main-container__info">Staff-ExD</p>
+                    </div>
                     <i class="fa-solid fa-angle-down"></i>
-                    <p class="contact-main-container__info">Staff-ExD</p>
                 </section>  
                 <section class="contact-main__container">
                     <figure class="contact-main-container__img">
-                        <img src="" alt="Foto de contacto">
+                        <img src="./../../assets/images/Francisco_img.PNG" alt="Foto de contacto">
                     </figure>
-                    <p class="contact-main-container__name">Francisco Javier Martínez de la Fuente</p>
+                    <div class="contact-main-container__middle">
+                        <p class="contact-main-container__name">Francisco Javier Martínez de la Fuente</p>
+                        <p class="contact-main-container__info">Manager-IT</p>
+                    </div>
                     <i class="fa-solid fa-angle-down"></i>
-                    <p class="contact-main-container__info">Manager-IT</p>
                 </section>
                 <section class="contact-main__container">
                     <figure class="contact-main-container__img">
-                        <img src="" alt="Foto de contacto">
+                        <img src="./../../assets/images/Sofia_img.PNG" alt="Foto de contacto">
                     </figure>
-                    <p class="contact-main-container__name">Sofía Beltrán Moreno</p>
+                    <div class="contact-main-container__middle">
+                        <p class="contact-main-container__name">Sofía Beltrán Moreno</p>
+                        <p class="contact-main-container__info">Leader-ExD</p>
+                    </div>
                     <i class="fa-solid fa-angle-down"></i>
-                    <p class="contact-main-container__info">Leader-ExD</p>
                 </section>
             </section>
         </section>
@@ -249,12 +262,12 @@
         <section class="notifications general">
             <section class="general__header">
                 <div class="general-header__left">
-                    <i class="general-header__icon fa-solid fa-calendar-days fa-xl"></i>
+                    <i class="general-header__icon fa-solid fa-calendar-days fa-lg"></i>
                     <h5 class="general-header__title">Notificaciones</h5>
                 </div>
                 <i class="fa-solid fa-ellipsis-vertical"></i>
             </section>
-            <section class="notifications__main">
+            <section class="notifications__main general__main">
                 <section class="notifications-main__todo">
                     <div class="main-todo__container">
                         <h5 class="todo-container__title">Actualizar benchmark perfiles en proyecto</h5>
@@ -303,6 +316,63 @@
             </section>
             
         </section>
+
+        <!---------PROJECTS--------->
+
+        <section class="contacts general">
+            <section class="general__header">
+                <div class="general-header__left">
+                    <i class="general-header__icon fa-solid fa-users fa-lg"></i>
+                    <h5 class="general-header__title">Mis contactos</h5>
+                </div>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </section>
+            
+            <nav class="component__nav">
+                <ul class="component-nav__list">
+                    <li class="nav-list__link"><a href="" class="list-link__anchor">En curso</a></li>
+                    <li class="nav-list__link"><a href="" class="list-link__anchor">Relacionados</a></li>
+                    <li class="nav-list__link"><a href=""  class="list-link__anchor">Cerrados</a></li>       
+                </ul>
+            </nav>
+            
+            <section class="proyect general__main">
+                <section class="project__container">
+                    <section class="project-container__single">
+                        <h5 class="comtainersingle__title">SKM: Internet inteligente</h5>
+                        <p class="container-single__text">Proyecto interno</p>
+                        <section class="container-single__buttons">
+                            <button class="single-button">Intranet</button>
+                            <button class="single-button">Buscador inteligente</button>
+                            <button class="single-button">+2</button>
+                        </section>
+                    </section>
+                    <section class="project-container__single">
+                        <h5 class="comtainersingle__title">SKM: Internet inteligente</h5>
+                        <p class="container-single__text">Proyecto interno</p>
+                        <section class="container-single__buttons">
+                            <button class="single-button">Intranet</button>
+                            <button class="single-button">Buscador inteligente</button>
+                            <button class="single-button">+2</button>
+                        </section>
+                    </section>
+                    <section class="project-container__single">
+                        <h5 class="comtainersingle__title">SKM: Internet inteligente</h5>
+                        <p class="container-single__text">Proyecto interno</p>
+                        <section class="container-single__buttons">
+                            <button class="single-button">Intranet</button>
+                            <button class="single-button">Buscador inteligente</button>
+                            <button class="single-button">+2</button>
+                        </section>
+                    </section>
+                    <section class="general__see-more">
+                        <a href="#" class="see-more__limk">Ver más</a>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </section>
+                </section>
+            </section>
+        </section>
+
       
         
             
