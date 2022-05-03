@@ -80,7 +80,15 @@
 // ----------------------------------------------------------*/   
 @import '05-components/_components__example.scss';
 @import '05-components/header/_components__header.scss';
+@import '05-components/main/_components__main.scss';
 @import '05-components/eventos/_components__events.scss';
+@import '05-components/mails/_components__mails.scss';
+@import '05-components/users/_components__users.scss';
+@import '05-components/notificaciones/_components__notifications.scss';
+@import '05-components/general/_components__general.scss';
+
+
+
 
 // /*----------------------------------------------------------
 //     # COMPONENTS REPOSITORY
@@ -90,6 +98,7 @@
 @import '05-components/repository/_components__repository.scss';
 @import '05-components/repository/_components__sidebar.scss';
 @import '05-components/repository/_components__header.scss';
+
 
 //*----------------------------------------------------------
 //     # TRUMPS

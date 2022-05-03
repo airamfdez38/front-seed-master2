@@ -66,22 +66,22 @@
        
     </header>
     <main>
-        
+    
         <!--------EVENTS-------->
-        <section class="events">
-            <section class="events__nav">
-                <div class="events-nav__left">
-                    <i class="events-nav__icon fa-solid fa-calendar-days"></i>
-                    <h5 class="events-nav__title">Eventos</h5>
+        <section class="events general">
+            <section class="general__header">
+                <div class="general-header__left">
+                    <i class="general-header__icon fa-solid fa-calendar-days fa-xl"></i>
+                    <h5 class="general-header__title">Eventos</h5>
                 </div>
                 <i class="fa-solid fa-ellipsis-vertical"></i>
             </section>
-            <section class="events__main">
+            <section class="events__main general__main">
                 <section class="events-main__today">
                     <h5 class="events-main__title">Hoy</h5>
                     <section class="events-main__info">
-                        <div class="main-info__hour-container">
-                            <p class="hour-container__text">11:00</p>
+                        <div class="main-info general__hour-container">
+                            <p class="general-hour-container__tex">11:00</p>
                         </div>
                         <section class="main-info__container">
                             <p  class="info-container__title">SKM Wireframes checkpoint</p>
@@ -89,8 +89,8 @@
                         </section>
                     </section>
                     <section class="events-main__info">
-                        <div class="main-info__hour-container">
-                            <p class="hour-container__text">13:00</p>
+                        <div class="main-info general__hour-container">
+                            <p class="general-hour-container__tex">13:00</p>
                         </div>
                         <section class="main-info__container">
                             <p class="info-container__title">SKM chill out</p>
@@ -101,76 +101,213 @@
                 <section class="events-main__tomorrow">
                     <h5 class="main-tomorrow__title">Mañana</h5>
                     <section class="main-tomorrow__info">
-                        <div class="tomorrow-info__hour-container">
+                        <div class="general__hour-container">
                             <p class="tomorrow-hour-container__text">11:00</p>
                         </div>
                         <section class="main-tomorrow__container">
                             <p class="tomorrow-container__title">SKM Wireframes check</p>
-                            <p class="tomorrow-containe__text">11:00 a 12:00. Sala 446</p>
+                            <p class="general-hour-container__tex">11:00 a 12:00. Sala 446</p>
                         </section>
                     </section>
 
                 </section>
-                <section class="events__see-more">
+                <section class="general__see-more">
                     <a href="#" class="see-more__limk">Ver más</a>
                     <i class="fa-solid fa-angle-down"></i>
     
                 </section>
             </section>
-           
+        
+        </section>
+        <!---------MAILS------------>
+
+        <section class="mails general">
+            <section class=" general__header">
+                <div class=" mails-header__left general-header__left">
+                    <i class="general-header__icon fa-solid fa-envelope fa-xl"></i>
+                    <h5 class="general-header__title">Mails</h5>
+                </div>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </section>
+            <section class="mails__main">
+                <section class="mails-main__user-mail">
+                    <p class="user-mail__data">20/06/2017 - 13:00</p>
+                    <div class="user-mail__info">
+                        <figure class="user-mail__img">
+                            <img src="" alt="Foto usuario">
+                        </figure>
+                        <p class="user-mail__name">Francisco Javier Fernández</p>
+                    </div>
+                    <h5 class="user-mail__title">Nuevas versiones de las pantallas</h5>
+                    <p class="user-mail__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. </p>
+
+                </section>
+                <section class="mails-main__user-mail">
+                    <p class="user-mail__data">20/06/2017 - 13:00</p>
+                    <div class="user-mail__info">
+                        <figure class="user-mail__img">
+                            <img src="" alt="Foto usuario">
+                        </figure>
+                        <p class="user-mail__name">Francisco Javier Fernández</p>
+                    </div>
+                    <h5 class="user-mail__title">Nuevos datos password(Invision Zeplin..</h5>
+                    <p class="user-mail__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+
+                </section>
+                <section class="mails-main__user-mail">
+                    <p class="user-mail__data">20/06/2017 - 13:00</p>
+                    <div class="user-mail__info">
+                        <figure class="user-mail__img">
+                            <img src="" alt="Foto usuario">
+                        </figure>
+                        <p class="user-mail__name">Francisco Javier Fernández</p>
+                    </div>
+                    <h5 class="user-mail__title">Nuevas versiones de las pantallas</h5>
+                    <p class="user-mail__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+
+                </section>
+                <section class="general__see-more">
+                    <a href="#" class="see-more__limk">Ver más</a>
+                    <i class="fa-solid fa-angle-down"></i>
+    
+                </section>
+            </section>
+            
+        </section>
+        <!------------CONTACTS---------->
+        <section class="contacts general">
+            <section class="general__header">
+                <div class="general-header__left">
+                    <i class="general-header__icon fa-solid fa-users fa-xl"></i>
+                    <h5 class="general-header__title">Mis contactos</h5>
+                </div>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </section>
+            <section class="contacts__nav">
+                <nav class="component__nav">
+                    <ul class="component-nav__list">
+                        <li class="component-nav__link"><a href="">Contacto</a></li>
+                        <li class="component-nav__link"><a href="">Grupo</a></li>
+                        <li class="component-nav__link"><a href="">Relación</a></li>       
+                    </ul>
+                </nav>
+            </section>
+            <section class="contact__main">
+                <section class="contact-main__container">
+                    <figure class="contact-main-container__img">
+                        <img src="" alt="Foto de contacto">
+                    </figure>
+                    <p class="contact-main-container__name">Raquel Laguna Soriano</p>
+                    <i class="fa-solid fa-angle-down"></i>
+                    <p class="contact-main-container__info">Leader-ExD</p>
+                </section>
+                <section class="contact-main__container">
+                    <figure class="contact-main-container__img">
+                        <img src="" alt="Foto de contacto">
+                    </figure>
+                    <p class="contact-main-container__name">Álvaro Ruiz Miranda</p>
+                    <i class="fa-solid fa-angle-down"></i>
+                    <p class="contact-main-container__info">Student-IT</p>
+                </section>
+                <section class="contact-main__container">
+                    <figure class="contact-main-container__img">
+                        <img src="" alt="Foto de contacto">
+                    </figure>
+                    <p class="contact-main-container__name">María López Segarra</p>
+                    <i class="fa-solid fa-angle-down"></i>
+                    <p class="contact-main-container__info">Student-ExD</p>
+                </section>
+                <section class="contact-main__container">
+                    <figure class="contact-main-container__img">
+                        <img src="" alt="Foto de contacto">
+                    </figure>
+                    <p class="contact-main-container__name">Miguel Pérez Lobera</p>
+                    <i class="fa-solid fa-angle-down"></i>
+                    <p class="contact-main-container__info">Staff-ExD</p>
+                </section>  
+                <section class="contact-main__container">
+                    <figure class="contact-main-container__img">
+                        <img src="" alt="Foto de contacto">
+                    </figure>
+                    <p class="contact-main-container__name">Francisco Javier Martínez de la Fuente</p>
+                    <i class="fa-solid fa-angle-down"></i>
+                    <p class="contact-main-container__info">Manager-IT</p>
+                </section>
+                <section class="contact-main__container">
+                    <figure class="contact-main-container__img">
+                        <img src="" alt="Foto de contacto">
+                    </figure>
+                    <p class="contact-main-container__name">Sofía Beltrán Moreno</p>
+                    <i class="fa-solid fa-angle-down"></i>
+                    <p class="contact-main-container__info">Leader-ExD</p>
+                </section>
+            </section>
         </section>
 
         <!---------NOTIFICATIONS----------->
 
-        <section class="notifications">
-            <nav class="notifications__nav">
-                <i class="notifications-nav__icon fa-solid fa-bell fa-xl"></i>
-                <h3 class="notifications-nav__title">Notificaciones</h3>
+        <section class="notifications general">
+            <section class="general__header">
+                <div class="general-header__left">
+                    <i class="general-header__icon fa-solid fa-calendar-days fa-xl"></i>
+                    <h5 class="general-header__title">Notificaciones</h5>
+                </div>
                 <i class="fa-solid fa-ellipsis-vertical"></i>
-            </nav>
+            </section>
             <section class="notifications__main">
                 <section class="notifications-main__todo">
                     <div class="main-todo__container">
-                        <h4 class="todo-container__title">Actualizar benchmark perfiles en proyecto</h4>
+                        <h5 class="todo-container__title">Actualizar benchmark perfiles en proyecto</h5>
                         <p class="todo-container__text">SKM: Intranet Inteligente</p>
-                        <i class="fa-regular fa-square-check fa-xl"></i>
+                        <div class="todo-container__deadline">
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                            <p class="todo-container__text-2">Deadline 19/06</p>
+                        </div> 
 
                     </div>
-                    <div class="main-todo__deadline">
-                        <i class="fa-solid fa-circle-exclamation"></i>
-                        <p class="todo-deadline__text">Deadline 19/06</p>
+                    <div class="main-todo__check">
+                        <i class="fa-regular fa-square-check fa-xl"></i>
                     </div>
                 </section>
                 <section class="notifications-main__todo">
                     <div class="main-todo__container">
-                        <h4 class="todo-container__title">Actualizar documentos</h4>
+                        <h5 class="todo-container__title">Actualizar documentos</h5>
                         <p class="todo-container__text">SKM: Intranet Inteligente</p>
-                        <i class="fa-regular fa-square-check fa-xl"></i>
-
+                        <div class="todo-container__deadline">
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                            <p class="todo-container__text-2">Deadline 19/06</p>
+                        </div>        
                     </div>
-                    <div class="main-todo__deadline">
-                        <i class="fa-solid fa-circle-exclamation"></i>
-                        <p class="todo-deadline__text">Deadline 19/06</p>
+                    <div class="main-todo__check">
+                        <i class="fa-regular fa-square-check fa-xl"></i>
                     </div>
                 </section>
                 <section class="notifications-main__todo">
                     <div class="main-todo__container">
-                        <h4 class="todo-container__title">Actualizar documentos</h4>
+                        <h5 class="todo-container__title">Actualizar documentos</h5>
                         <p class="todo-container__text">SKM: Intranet Inteligente</p>
-                        <i class="fa-regular fa-square-check fa-xl"></i>
+                        <div class="todo-container__deadline">
+                            <i class="fa-solid fa-circle-exclamation"></i>
+                            <p class="todo-container__text-2">Deadline 19/06</p>
+                        </div> 
 
                     </div>
-                    <div class="main-todo__deadline">
-                        <i class="fa-solid fa-circle-exclamation"></i>
-                        <p class="todo-deadline__text">Deadline 19/06</p>
+                    <div class="main-todo__check">
+                        <i class="fa-regular fa-square-check fa-xl"></i>
                     </div>
                 </section>
+                <section class="general__see-more">
+                    <a href="#" class="see-more__limk">Ver más</a>
+                    <i class="fa-solid fa-angle-down"></i>
+                </section>
             </section>
-            <section class="events__see-more">
-                <a href="#" class="see-more__limk">Ver más</a>
-                <i class="see-more__icon fa-light fa-angle-down"></i>
-            </section>
+            
         </section>
+      
+        
+            
+        
+
 
 
     </main>

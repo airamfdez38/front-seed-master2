@@ -1,0 +1,20 @@
+.mails{
+    width: 55%;
+    .mails-header__left
+    .mails__main{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .mails-main__user-mail{
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            .user-mail__data{
+                color:rgba(193, 191, 191, 0.9);
+            }
+    
+        }  
+    }
+}
+
+
