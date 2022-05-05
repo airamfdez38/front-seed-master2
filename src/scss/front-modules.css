@@ -9266,10 +9266,10 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  margin-top: 60px;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin-top: 60px;
 }
 
 .events {
@@ -9412,6 +9412,7 @@ main {
 
 .mails .mails__main .mails-main__user-mail .user-mail__data {
   color: #6c757d;
+  margin: 10px 0;
 }
 
 .mails .mails__main .mails-main__user-mail .user-mail__info {
@@ -9422,10 +9423,13 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 220px;
+  width: 210px;
 }
 
 .mails .mails__main .mails-main__user-mail .user-mail__info .user-mail__img {
@@ -9435,6 +9439,7 @@ main {
 .mails .mails__main .mails-main__user-mail .user-mail__title {
   color: #0069d9;
   text-decoration: underline;
+  margin-bottom: 10px;
 }
 
 .contacts {
@@ -9532,6 +9537,7 @@ main {
 
 .notifications {
   width: 20%;
+  margin-top: -200px;
 }
 
 .notifications .notifications__main {
@@ -9640,6 +9646,8 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin-left: 30px;
   border-radius: 5px;
   border: 1px solid grey;
@@ -9752,7 +9760,7 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 15px;
+  padding: 20px;
   color: #007bff;
 }
 
@@ -9762,6 +9770,99 @@ main {
 
 .general .general__see-more .fa-angle-down {
   margin-left: 5px;
+}
+
+.project {
+  width: 50%;
+  margin-top: 40px;
+}
+
+.project .component__nav {
+  background-color: #cce5ff;
+  color: #0069d9;
+}
+
+.project .component__nav .component-nav__list {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.project .component__nav .component-nav__list .nav-list__link {
+  color: #0069d9;
+  font-size: 1.1em;
+  padding: 15px 0;
+}
+
+.project .project__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.project .project__container .project-container__single {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 10px 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #d6d8db;
+}
+
+.project .project__container .project-container__single .comtainersingle__title {
+  color: #0069d9;
+  text-decoration: underline;
+}
+
+.project .project__container .project-container__single .container-single__text {
+  padding: 10px 0;
+}
+
+.project .project__container .project-container__single .container-single__buttons {
+  width: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.project .project__container .project-container__single .container-single__buttons .single-button {
+  background-color: #ffeeba;
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 0.8em;
+  color: #333333;
+  font-weight: bold;
+}
+
+.project .project__container .project-container__single .container-single__buttons .single-button:last-of-type {
+  border: 2px solid #ffeeba;
+  background-color: #fff;
 }
 
 .ns-box {
