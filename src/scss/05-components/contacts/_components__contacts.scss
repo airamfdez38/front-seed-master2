@@ -1,5 +1,8 @@
 .contacts{
     width: 20%;
+    @include desktop{
+        width: 30%;
+    }
 
     .component__nav{
         width: 100%;
