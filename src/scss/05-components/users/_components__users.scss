@@ -18,48 +18,60 @@
         }
        
     }
-    .component-nav__list:first-of-type{
-        font-weight: bolder;
-    }
-    
-    .contact-main__container{
-        width: 85%;
+    .contact__main{
         display: flex;
         flex-direction: row;
-        align-items: flex-start;
-        justify-content: space-between;
-        padding: 10px 10px;
-        border-bottom: 1px solid color(primary-dark);
-        margin: 5px auto;
-        .contact-main-container__img{
-            width: 50px;
-        }
-        .contact-main-container__middle{
+        justify-content: space-around;
+        background-color: #fff;
+        .contact-main__container{
             display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: center;
-            
-            .contact-main-container__name{
-                color: color(primary-dark);
-                font-weight: bold;
-                text-decoration: underline;
-            }
-            
-            .contact-main-container__info{
-                margin-top: 5px;
-            }
-
-        }
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            border-bottom: 1px solid color(primary-dark);
+            margin: auto;
+            padding: 15px 5px;
+            width: 95%;
         
-        .fa-angle-down{
-            color: color(primary-dark);
+            .contact-main-container__img{
+                width: 20%;
+            }
+            .contact-main-container__middle{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                width: 60%;
+               padding-left: 10px;
+                
+                
+                .contact-main-container__name{
+                    color: color(primary-dark);
+                    font-weight: bold;
+                    text-decoration: underline;
+                }
+                
+                .contact-main-container__info{
+                    margin-top: 5px;
+                }
+    
+            }
+            
+            .fa-angle-down{
+                color: color(primary-dark);
+                width: 20%;
+                margin-left: 10px;
+            }
+           
+        }
+    
+        .contact-main__right{
+            width: 5%;
+            border-left: 6px solid color(default-light);
+            height: 200px;
+            margin-top: 50px;
+
         }
     }
     
-    .contact-main__container:last-of-type{
-        border-bottom: 0px;
-        margin-bottom: 0%;
-    }
 
 }

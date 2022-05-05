@@ -1,8 +1,16 @@
-main{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin-top: 60px;
-    align-items: flex-start;
+body{
+    background-image: url('./../../../assets/images/sidebar-wall.png');
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position-y: 25%;
 
+    main{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-top: 60px;
+        align-items: flex-start;
+       
+    }
 }

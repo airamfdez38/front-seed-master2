@@ -9085,9 +9085,9 @@ li > ol {
 }
 
 header {
-  background: #0069d9;
-  background: -webkit-gradient(linear, left top, right top, from(#0069d9), color-stop(91%, #3cad0a));
-  background: linear-gradient(90deg, #0069d9 0%, #3cad0a 91%);
+  background: #4479af;
+  background: -webkit-gradient(linear, left top, right top, color-stop(47%, #4479af), color-stop(91%, #80950b));
+  background: linear-gradient(90deg, #4479af 47%, #80950b 91%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9256,7 +9256,15 @@ header .header__user-area .header__user .header-user__icon {
   color: #fff;
 }
 
-main {
+body {
+  background-image: url("./../../../assets/images/sidebar-wall.png");
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position-y: 25%;
+}
+
+body main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9386,7 +9394,7 @@ main {
 }
 
 .mails {
-  width: 50%;
+  width: 52%;
 }
 
 .mails .mails__main {
@@ -9472,12 +9480,7 @@ main {
   padding: 10px;
 }
 
-.contacts .component-nav__list:first-of-type {
-  font-weight: bolder;
-}
-
-.contacts .contact-main__container {
-  width: 85%;
+.contacts .contact__main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9485,22 +9488,35 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 10px 10px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #fff;
+}
+
+.contacts .contact__main .contact-main__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   border-bottom: 1px solid #0069d9;
-  margin: 5px auto;
+  margin: auto;
+  padding: 15px 5px;
+  width: 95%;
 }
 
-.contacts .contact-main__container .contact-main-container__img {
-  width: 50px;
+.contacts .contact__main .contact-main__container .contact-main-container__img {
+  width: 20%;
 }
 
-.contacts .contact-main__container .contact-main-container__middle {
+.contacts .contact__main .contact-main__container .contact-main-container__middle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9511,28 +9527,31 @@ main {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  width: 60%;
+  padding-left: 10px;
 }
 
-.contacts .contact-main__container .contact-main-container__middle .contact-main-container__name {
+.contacts .contact__main .contact-main__container .contact-main-container__middle .contact-main-container__name {
   color: #0069d9;
   font-weight: bold;
   text-decoration: underline;
 }
 
-.contacts .contact-main__container .contact-main-container__middle .contact-main-container__info {
+.contacts .contact__main .contact-main__container .contact-main-container__middle .contact-main-container__info {
   margin-top: 5px;
 }
 
-.contacts .contact-main__container .fa-angle-down {
+.contacts .contact__main .contact-main__container .fa-angle-down {
   color: #0069d9;
+  width: 20%;
+  margin-left: 10px;
 }
 
-.contacts .contact-main__container:last-of-type {
-  border-bottom: 0px;
-  margin-bottom: 0%;
+.contacts .contact__main .contact-main__right {
+  width: 5%;
+  border-left: 6px solid #d6d8db;
+  height: 200px;
+  margin-top: 50px;
 }
 
 .notifications {
@@ -9586,7 +9605,7 @@ main {
 }
 
 .notifications .notifications__main .notifications-main__todo .todo-container__deadline {
-  width: 70%;
+  width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9594,8 +9613,9 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -9773,7 +9793,7 @@ main {
 }
 
 .project {
-  width: 50%;
+  width: 52%;
   margin-top: 40px;
 }
 
