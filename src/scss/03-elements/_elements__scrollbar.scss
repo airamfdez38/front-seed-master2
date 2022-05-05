@@ -9,7 +9,7 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background-color: color(ns-primary);
+    background-color: color(default-light);
     @include border-radius(10px);
 }
 
