@@ -1,8 +1,5 @@
 .mails{
     width: 52%;
-    @include desktop{
-        width: 30%;
-    }
     .mails__main{
         align-items: center;
 
@@ -30,9 +27,6 @@
                 color:color(primary-dark);
                 text-decoration: underline;
                 margin-bottom: 10px;
-                @include desktop{
-                    font-size: 0.9rem;
-                }
             }
     
         }  

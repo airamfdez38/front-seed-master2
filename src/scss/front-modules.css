@@ -9913,6 +9913,20 @@ body main {
   background-color: #fff;
 }
 
+.narrow-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+
 .ns-box {
   position: relative;
   height: 100%;
@@ -12129,6 +12143,102 @@ body main {
 
 .t-color-hover-darken-darker:hover {
   color: #1d2124 !important;
+}
+
+.t-color-background-nav-bg {
+  background-color: #E3E8F2 !important;
+}
+
+.t-color-border-nav-bg {
+  border-color: #E3E8F2 !important;
+}
+
+.t-color-nav-bg {
+  color: #E3E8F2 !important;
+}
+
+.t-color-background-focus-nav-bg:focus {
+  background-color: #E3E8F2 !important;
+}
+
+.t-color-border-focus-nav-bg:focus {
+  border-color: #E3E8F2 !important;
+}
+
+.t-color-focus-nav-bg:focus {
+  color: #E3E8F2 !important;
+}
+
+.t-color-background-active-nav-bg:active {
+  background-color: #E3E8F2 !important;
+}
+
+.t-color-border-active-nav-bg:active {
+  border-color: #E3E8F2 !important;
+}
+
+.t-color-active-nav-bg:active {
+  color: #E3E8F2 !important;
+}
+
+.t-color-background-hover-nav-bg:hover {
+  background-color: #E3E8F2 !important;
+}
+
+.t-color-border-hover-nav-bg:hover {
+  border-color: #E3E8F2 !important;
+}
+
+.t-color-hover-nav-bg:hover {
+  color: #E3E8F2 !important;
+}
+
+.t-color-background-btn-bg {
+  background-color: #E8EEB3 !important;
+}
+
+.t-color-border-btn-bg {
+  border-color: #E8EEB3 !important;
+}
+
+.t-color-btn-bg {
+  color: #E8EEB3 !important;
+}
+
+.t-color-background-focus-btn-bg:focus {
+  background-color: #E8EEB3 !important;
+}
+
+.t-color-border-focus-btn-bg:focus {
+  border-color: #E8EEB3 !important;
+}
+
+.t-color-focus-btn-bg:focus {
+  color: #E8EEB3 !important;
+}
+
+.t-color-background-active-btn-bg:active {
+  background-color: #E8EEB3 !important;
+}
+
+.t-color-border-active-btn-bg:active {
+  border-color: #E8EEB3 !important;
+}
+
+.t-color-active-btn-bg:active {
+  color: #E8EEB3 !important;
+}
+
+.t-color-background-hover-btn-bg:hover {
+  background-color: #E8EEB3 !important;
+}
+
+.t-color-border-hover-btn-bg:hover {
+  border-color: #E8EEB3 !important;
+}
+
+.t-color-hover-btn-bg:hover {
+  color: #E8EEB3 !important;
 }
 
 .t-visible {

@@ -1,8 +1,6 @@
+
 .events{
     width:20%;
-    @include desktop{
-        width: 30%;
-    }
     .events__main{
        
         .events-main__today {

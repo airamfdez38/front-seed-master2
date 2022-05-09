@@ -21,6 +21,7 @@
 @import '00-settings/_settings__trumps';
 @import '00-settings/_settings__objects';
 @import '00-settings/_settings_seed-responsive';
+@import '00-settings/_settings__medias.scss';
 
 //*----------------------------------------------------------
 //    # TOOLS
@@ -88,7 +89,7 @@
 @import '05-components/notificaciones/_components__notifications.scss';
 @import '05-components/general/_components__general.scss';
 @import '05-components/projects/_components__projects.scss';
-
+@import '05-components/general/_components__globals.scss';
 
 
 
