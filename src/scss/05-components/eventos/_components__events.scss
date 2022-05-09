@@ -1,19 +1,28 @@
 
 .events{
+    @extend .dimensions;
     width:20%;
+    .events__header{
+        @extend .card__header;
+        .events-header__left{
+            @extend .card-header__left;
+            .events-header__title{
+                @extend .card-header__title;
+            }
+        }
+        .fa-ellipsis-vertical{
+            margin-right: 30px;
+        }
+    }
     .events__main{
-       
+        @extend .card__main;
         .events-main__today {
             
             margin: 20px 30px 20px 30px;
             width: 80%;
 
             .events-main__title{
-                color: #0062cc;
-                text-transform: uppercase;
-                font-weight: 600;
-                font-size: 1rem;
-                margin-top: 10px;
+               @extend .card__title;
             }
             .events-main__info{
                 display: flex;
@@ -21,14 +30,8 @@
                 align-items: center;
                 margin-top: 10px;
                 
-                .events-info__hour-container{
-                    width: 45px;
-                    height: 45px;
-                    border-radius: 50%;
-                    background-color:#0062cc;
-                    color: #fff;
-                    flex-direction: column;
-                    justify-content: center;
+                .main-info__hour-container{
+                    @extend .card__hour-container;
                     .hour-container__text{
                         font-size: 1rem;
                         margin: auto;
@@ -57,17 +60,16 @@
             margin: 0px 30px 20px 30px;
             width: 80%;
             .main-tomorrow__title{
-                color: #0062cc;
-                text-transform: uppercase;
-                font-weight: 600;
-                font-size: 1rem;
-                margin-top: 10px;
+               @extend .card__title;
             }
             .main-tomorrow__info{
                 display: flex;
                 flex-direction: row;
                 align-items: center;
                 margin-top: 10px;
+                .main-info__hour-container{
+                    @extend .card__hour-container;
+                }
                 
                 .main-tomorrow__container{
                     margin-left: 10px;
@@ -78,6 +80,9 @@
             
                 }
             }
+        }
+        .events__see-more{
+            @extend  .card__see-more;
         }
          
 

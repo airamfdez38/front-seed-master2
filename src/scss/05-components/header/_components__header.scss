@@ -6,7 +6,9 @@ header{
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-
+    .header__menu-icon{
+        display: none;
+    }
    .header-logo__img{
        width: 130px;
        height: 80px;

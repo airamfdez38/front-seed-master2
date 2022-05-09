@@ -17,7 +17,9 @@
 <body>
     <!--------HEADER-------->
     <header class="header">
-        
+        <section class="header__menu-icon">
+            <i class="fa-solid fa-bars"></i>
+        </section>
         <section class="header__logo">
             <figure class="header-logo__img">
                 <img src="./../../assets/images/logoeveris.png" alt="corporative identity" >
@@ -72,20 +74,20 @@
     <main>
     
         <!--------EVENTS-------->
-        <section class="events general">
-            <section class="general__header">
-                <div class="general-header__left">
-                    <i class="general-header__icon fa-solid fa-calendar-days fa-lg"></i>
-                    <h5 class="general-header__title">Eventos</h5>
+        <section class="events">
+            <section class="events__header">
+                <div class="events-header__left">
+                    <i class="events-header__icon fa-solid fa-calendar-days fa-lg"></i>
+                    <h5 class="events-header__title">Eventos</h5>
                 </div>
                 <i class="fa-solid fa-ellipsis-vertical"></i>
             </section>
-            <section class="events__main general__main">
+            <section class="events__main ">
                 <section class="events-main__today">
                     <h5 class="events-main__title">Hoy</h5>
                     <section class="events-main__info">
-                        <div class="main-info general__hour-container">
-                            <p class="general-hour-container__tex">11:00</p>
+                        <div class="main-info__hour-container">
+                            <p class="hour-container__text">11:00</p>
                         </div>
                         <section class="main-info__container">
                             <p  class="info-container__title">SKM Wireframes checkpoint</p>
@@ -93,8 +95,8 @@
                         </section>
                     </section>
                     <section class="events-main__info">
-                        <div class="main-info general__hour-container">
-                            <p class="general-hour-container__tex">13:00</p>
+                        <div class="main-info__hour-container">
+                            <p class="hour-container__text">13:00</p>
                         </div>
                         <section class="main-info__container">
                             <p class="info-container__title">SKM chill out</p>
@@ -105,17 +107,17 @@
                 <section class="events-main__tomorrow">
                     <h5 class="main-tomorrow__title">Mañana</h5>
                     <section class="main-tomorrow__info">
-                        <div class="general__hour-container">
-                            <p class="tomorrow-hour-container__text">11:00</p>
+                        <div class="main-info__hour-container">
+                            <p class="hour-container__text">11:00</p>
                         </div>
                         <section class="main-tomorrow__container">
                             <p class="tomorrow-container__title">SKM Wireframes check</p>
-                            <p class="general-hour-container__tex">11:00 a 12:00. Sala 446</p>
+                            <p class="hour-container__tex">11:00 a 12:00. Sala 446</p>
                         </section>
                     </section>
 
                 </section>
-                <section class="general__see-more">
+                <section class="events__see-more">
                     <a href="#" class="see-more__limk">Ver más</a>
                     <i class="fa-solid fa-angle-down"></i>
     
@@ -125,15 +127,15 @@
         </section>
         <!---------MAILS------------>
 
-        <section class="mails general">
-            <section class=" general__header">
-                <div class=" mails-header__left general-header__left">
-                    <i class="general-header__icon fa-solid fa-envelope fa-lg"></i>
-                    <h5 class="general-header__title">Mails</h5>
+        <section class="mails ">
+            <section class=" mails__header">
+                <div class=" mails-header__left">
+                    <i class=" fa-solid fa-envelope fa-lg"></i>
+                    <h5 class="mails-header__title">Mails</h5>
                 </div>
                 <i class="fa-solid fa-ellipsis-vertical"></i>
             </section>
-            <section class="mails__main general__main">
+            <section class="mails__main">
                 <section class="mails-main__user-mail">
                     <p class="user-mail__data">20/06/2017 - 13:00</p>
                     <div class="user-mail__info">
@@ -170,7 +172,7 @@
                     <p class="user-mail__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
 
                 </section>
-                <section class="general__see-more">
+                <section class="mails__see-more">
                     <a href="#" class="see-more__limk">Ver más</a>
                     <i class="fa-solid fa-angle-down"></i>
     
@@ -179,24 +181,24 @@
             
         </section>
         <!------------CONTACTS---------->
-        <section class="contacts general">
-            <section class="general__header">
-                <div class="general-header__left">
-                    <i class="general-header__icon fa-solid fa-users fa-lg"></i>
-                    <h5 class="general-header__title">Mis contactos</h5>
+        <section class="contacts">
+            <section class="contacts__header">
+                <div class="contacts-header__left">
+                    <i class=" fa-solid fa-users fa-lg"></i>
+                    <h5 class="contacts-header__title">Mis contactos</h5>
                 </div>
                 <i class="fa-solid fa-ellipsis-vertical"></i>
             </section>
             
-            <nav class="component__nav">
-                <ul class="component-nav__list">
+            <nav class="contacts__nav">
+                <ul class="contacts-nav__list">
                     <li class="nav-list__link nav-list__link--bold "><a href="" class="list-link__anchor">Contacto</a></li>
                     <li class="nav-list__link"><a href="" class="list-link__anchor">Grupo</a></li>
                     <li class="nav-list__link"><a href=""  class="list-link__anchor">Relación</a></li>       
                 </ul>
             </nav>
             
-            <section class="contact__main">
+            <section class="contacts__main">
                 <div class="contact-main__left">
                     <section class="contact-main__container">
                         <figure class="contact-main-container__img">
@@ -268,16 +270,16 @@
 
         <!---------NOTIFICATIONS----------->
 
-        <section class="notifications general">
-            <section class="general__header">
-                <div class="general-header__left">
-                    <i class="header-notification__bell fa-solid fa-bell fa-xl"></i>
+        <section class="notifications">
+            <section class="notifications__header">
+                <div class="notifications-header__left">
+                    <i class=" fa-solid fa-bell fa-xl"></i>
 
-                    <h5 class="general-header__title">Notificaciones</h5>
+                    <h5 class="notifications-header__title">Notificaciones</h5>
                 </div>
                 <i class="fa-solid fa-ellipsis-vertical"></i>
             </section>
-            <section class="notifications__main general__main">
+            <section class="notifications__main ">
                 <section class="notifications-main__todo">
                     <div class="main-todo__container">
                         <h5 class="todo-container__title">Actualizar benchmark perfiles en proyecto</h5>
@@ -319,7 +321,7 @@
                         <i class="fa-regular fa-square-check fa-xl"></i>
                     </div>
                 </section>
-                <section class="general__see-more">
+                <section class="notifications__see-more">
                     <a href="#" class="see-more__limk">Ver más</a>
                     <i class="fa-solid fa-angle-down"></i>
                 </section>
@@ -329,27 +331,27 @@
 
         <!---------PROJECTS--------->
 
-        <section class="project general">
-            <section class="general__header">
-                <div class="general-header__left">
+        <section class="projects">
+            <section class="projects__header">
+                <div class="projects-header__left">
                     <i class="fa-solid fa-folder-open fa-lg"></i>
-                    <h5 class="general-header__title">Proyectos</h5>
+                    <h5 class="projects-header__title">Proyectos</h5>
                 </div>
                 <i class="fa-solid fa-ellipsis-vertical"></i>
 
             </section>
             
-            <nav class="component__nav">
-                <ul class="component-nav__list">
+            <nav class="projects__nav">
+                <ul class="projects-nav__list">
                     <li class="nav-list__link"><a href="" class="list-link__anchor">En curso</a></li>
                     <li class="nav-list__link"><a href="" class="list-link__anchor">Relacionados</a></li>
                     <li class="nav-list__link"><a href=""  class="list-link__anchor">Cerrados</a></li>       
                 </ul>
             </nav>
             
-            <section class=" general__main">
-                <section class="project__container">
-                    <section class="project-container__single">
+            <section class=" projects__main">
+                <section class="projects__container">
+                    <section class="projects-container__single">
                         <h5 class="comtainersingle__title">SKM: Internet inteligente</h5>
                         <p class="container-single__text">Proyecto interno</p>
                         <section class="container-single__buttons">
@@ -358,7 +360,7 @@
                             <button class="single-button">+2</button>
                         </section>
                     </section>
-                    <section class="project-container__single">
+                    <section class="projects-container__single">
                         <h5 class="comtainersingle__title">SKM: Internet inteligente</h5>
                         <p class="container-single__text">Proyecto interno</p>
                         <section class="container-single__buttons">
@@ -367,7 +369,7 @@
                             <button class="single-button">+2</button>
                         </section>
                     </section>
-                    <section class="project-container__single">
+                    <section class="projects-container__single">
                         <h5 class="comtainersingle__title">SKM: Internet inteligente</h5>
                         <p class="container-single__text">Proyecto interno</p>
                         <section class="container-single__buttons">
@@ -376,11 +378,13 @@
                             <button class="single-button">+2</button>
                         </section>
                     </section>
-                    <section class="general__see-more">
+                    <section class="proyects__see-more">
                         <a href="#" class="see-more__limk">Ver más</a>
                         <i class="fa-solid fa-angle-down"></i>
                     </section>
+                   
                 </section>
+                
             </section>
         </section>
 

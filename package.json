@@ -38,6 +38,7 @@
 	},
 	"dependencies": {
 		"@fortawesome/fontawesome-free": "^5.8.0",
+		"include-media": "^1.4.10",
 		"requirejs": "^2.3.6"
 	}
 }

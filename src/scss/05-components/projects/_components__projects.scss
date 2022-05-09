@@ -1,10 +1,23 @@
-.project{
+.projects{
     width: 52%;
     margin-top: 40px;
-    .component__nav{
+    @extend .dimensions;
+    .projects__header{
+        @extend .card__header;
+        .projects-header__left{
+            @extend .card-header__left;
+            .projects-header__title{
+                @extend .card-header__title;
+            }
+        }
+        .fa-ellipsis-vertical{
+            margin-right: 30px;
+        }
+    }
+    .projects__nav{
         background-color: color(primary-lighter);
         color: color(primary-dark);
-        .component-nav__list{
+        .projects-nav__list{
             width: 45%;
             display: flex;
             flex-direction: row;
@@ -17,44 +30,53 @@
             }   
         }   
     }
-    .project__container{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+    .projects__main{
+        @extend .card__main;
         
-        .project-container__single{
+        .projects__container{
             display: flex;
             flex-direction: column;
-            justify-content: space-evenly;
-            margin: 10px 20px;
-            padding-bottom: 10px;
-            border-bottom: 1px solid color(default-light);
-
-            .comtainersingle__title{
-                color:color(primary-dark);
-                text-decoration: underline;
-            }
-            .container-single__text{
-                padding: 10px 0;
-            }
-            .container-single__buttons{
-                width: 35%;
+            justify-content: space-around;
+            
+            .projects-container__single{
                 display: flex;
-                justify-content: space-between;
-                .single-button{
-                    background-color: color(warning-light);
-                    padding: 10px;
-                    border-radius: 15px;
-                    font-size: 0.8em;
-                    color: color(ns-tertiary);
-                    font-weight: bold;
+                flex-direction: column;
+                justify-content: space-evenly;
+                margin: 10px 20px;
+                padding-bottom: 10px;
+                border-bottom: 1px solid color(default-light);
+
+                .comtainersingle__title{
+                    color:color(primary-dark);
+                    text-decoration: underline;
                 }
-                .single-button:last-of-type{
-                    border: 2px solid color(warning-light);
-                    background-color: #fff;
-                   
+                .container-single__text{
+                    padding: 10px 0;
+                }
+                .container-single__buttons{
+                    width: 35%;
+                    display: flex;
+                    justify-content: space-between;
+                    .single-button{
+                        background-color: color(warning-light);
+                        padding: 10px;
+                        border-radius: 15px;
+                        font-size: 0.8em;
+                        color: color(ns-tertiary);
+                        font-weight: bold;
+                    }
+                    .single-button:last-of-type{
+                        border: 2px solid color(warning-light);
+                        background-color: #fff;
+                    
+                    }
                 }
             }
+            .proyects__see-more{
+                @extend .card__see-more;
+            } 
         }
+        
+        
     }
 }

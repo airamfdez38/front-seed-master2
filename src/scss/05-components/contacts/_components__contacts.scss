@@ -1,10 +1,22 @@
 .contacts{
+    @extend .dimensions;
     width: 20%;
-
-    .component__nav{
+    .contacts__header{
+        @extend .card__header;
+        .contacts-header__left{
+            @extend .card-header__left;
+            .contacts-header__title{
+                @extend .card-header__title;
+            }
+        }
+        .fa-ellipsis-vertical{
+            margin-right: 30px;
+        }
+    }
+    .contacts__nav{
         width: 100%;
         
-        .component-nav__list{
+        .contacts-nav__list{
             
             display: flex;
             flex-direction: row;
@@ -20,7 +32,7 @@
            
         } 
     }
-    .contact__main{
+    .contacts__main{
         display: flex;
         flex-direction: row;
         justify-content: space-around;

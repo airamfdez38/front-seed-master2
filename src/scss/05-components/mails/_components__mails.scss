@@ -1,6 +1,20 @@
 .mails{
+    @extend .dimensions;
     width: 52%;
+    .mails__header{
+        @extend .card__header;
+        .mails-header__left{
+            @extend .card-header__left;
+            .mails-header__title{
+                @extend .card-header__title;
+            }
+        }
+        .fa-ellipsis-vertical{
+            margin-right: 30px;
+        }
+    }
     .mails__main{
+        @extend .card__main;
         align-items: center;
 
         .mails-main__user-mail{
@@ -29,7 +43,10 @@
                 margin-bottom: 10px;
             }
     
-        }  
+        } 
+        .mails__see-more{
+            @extend  .card__see-more;
+        } 
     }
 }
 
