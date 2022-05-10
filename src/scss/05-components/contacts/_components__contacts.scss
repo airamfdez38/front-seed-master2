@@ -1,6 +1,8 @@
 .contacts{
     @extend .dimensions;
     width: 20%;
+    min-width: 300px;
+
     .contacts__header{
         @extend .card__header;
         .contacts-header__left{

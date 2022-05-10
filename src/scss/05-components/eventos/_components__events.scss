@@ -2,6 +2,7 @@
 .events{
     @extend .dimensions;
     width:20%;
+    min-width: 300px;
     .events__header{
         @extend .card__header;
         .events-header__left{
@@ -88,4 +89,6 @@
 
     }
 }
+
+
 

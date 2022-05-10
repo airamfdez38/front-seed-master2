@@ -1,0 +1,60 @@
+@media(min-width:1024px)and(max-width: 1279px){
+    .header{
+    
+        .header-logo__img{
+            width: 100px;
+        }  
+        .header__search{
+            width: 300px;
+        }
+        
+        .header__nav{
+            width: 350px;
+            
+        }
+        .header__user-area{
+            width: 100px;
+        }
+    }
+    main{
+        flex-wrap: nowrap;
+        margin-right: 15px;
+
+        .events, .mails, .contacts, .notifications, .projects{
+            width: 30%;
+
+        }
+        .mails{
+            .user-mail__text{
+                width: 100%;
+            }
+        }
+        .notifications{
+            margin-top: -440px;
+
+        }
+        .projects-nav{
+            .projects-nav__list{
+                width: 100%;
+                justify-content: space-evenly;
+                .nav-list__link{
+                    padding: 10px;
+                    font-size: 1em;
+                }
+            }
+        }
+        .projects-container__single{
+            margin: 10px 0;
+            .container-single__buttons{
+                width: 100%;
+                .single-button{
+                    margin: 5px 10px;
+                }
+
+            }
+        }
+
+
+
+    }
+}
