@@ -1,5 +1,6 @@
 .projects{
     width: 52%;
+    min-width: 700px;
     margin-top: 40px;
     @extend .dimensions;
     .projects__header{

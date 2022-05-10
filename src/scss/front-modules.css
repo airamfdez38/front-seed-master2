@@ -23,9 +23,6 @@
   main .mails .user-mail__text {
     width: 100%;
   }
-  main .notifications {
-    margin-top: -440px;
-  }
   main .projects-nav .projects-nav__list {
     width: 100%;
     -webkit-box-pack: space-evenly;
@@ -9169,6 +9166,10 @@ li > ol {
           align-items: center;
 }
 
+.header .logo-mobile__img {
+  display: none;
+}
+
 .header .header__search {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9347,21 +9348,39 @@ body main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-top: 60px;
+  margin: 60px 30px;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body main .main__left-side, body main .main__center, body main .main__right-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: auto;
 }
 
 .events {
   width: 20%;
-  min-width: 300px;
+  min-width: 330px;
+  margin-bottom: 40px;
 }
 
 .events .events__header .fa-ellipsis-vertical {
@@ -9448,6 +9467,7 @@ body main {
 
 .mails {
   width: 52%;
+  min-width: 700px;
 }
 
 .mails .mails__header .fa-ellipsis-vertical {
@@ -9509,7 +9529,7 @@ body main {
 
 .contacts {
   width: 20%;
-  min-width: 300px;
+  min-width: 330px;
 }
 
 .contacts .contacts__header .fa-ellipsis-vertical {
@@ -9618,7 +9638,7 @@ body main {
 
 .notifications {
   width: 20%;
-  margin-top: -200px;
+  min-width: 330px;
 }
 
 .notifications .notifications__header .fa-ellipsis-vertical {
@@ -9734,7 +9754,6 @@ body main {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin-left: 30px;
   border-radius: 5px;
   border: 1px solid grey;
 }
@@ -9864,6 +9883,7 @@ body main {
 
 .projects {
   width: 52%;
+  min-width: 700px;
   margin-top: 40px;
 }
 

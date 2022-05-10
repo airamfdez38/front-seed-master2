@@ -17,6 +17,9 @@
        align-items: center;
       
    }
+   .logo-mobile__img{
+      display: none;
+   }
    .header__search{
        display: flex;
        flex-direction: row;

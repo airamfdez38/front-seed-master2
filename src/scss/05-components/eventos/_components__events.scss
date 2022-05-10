@@ -2,7 +2,8 @@
 .events{
     @extend .dimensions;
     width:20%;
-    min-width: 300px;
+    min-width: 330px;
+    margin-bottom: 40px;
     .events__header{
         @extend .card__header;
         .events-header__left{
