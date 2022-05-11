@@ -1,57 +1,179 @@
-@media(min-width:1024px)and(max-width: 1279px){
+@media (min-width:1024px) and (max-width: 1279px){
     .header{
-    
-        .header-logo__img{
-            width: 100px;
-        }  
+        justify-content: space-around;
         .header__search{
-            width: 300px;
+            width: 350px;
+        }
+        .search-input__icon2{
+            display: none;
+        }
+        .header__nav{
+            width: 370px;
+            .header-nav__ul{
+                justify-content: space-evenly;
+            }
+        }
+       .header__user-area{
+           justify-content: space-evenly;
+       }
+    }
+   .events, .mails, .contacts, .notifications, .projects{
+       width: 30%;
+       min-width: 300px;
+   }
+   .container-single__buttons{
+       width: 100%;
+   }
+}
+@media (min-width: 786px) and (max-width: 1023px){
+   .header{
+       justify-content: space-evenly;
+        .header__menu-icon{
+            display: block;
+            color: white;
+        }
+        .header-logo__img{
+            display: none;
+        }
+        .logo-mobile__img{
+            display: block;
+            align-self: left;
+         }
+        .header__search{
+            width: 500px;
+            height: 35px;
+        }
+        .search-input__icon2{
+            display: none;
         }
         
         .header__nav{
-            width: 350px;
-            
+            display: none;
         }
-        .header__user-area{
-            width: 100px;
+   }
+    
+    main{
+        margin: 40px 20px;
+        flex-wrap: wrap;
+        .main__left-side, .main__center, .main__right-side{
+            flex-direction: row;
+            height: auto;
+            width: 100%;    
+        }
+        .events, .mails, .contacts, .notifications, .projects{
+            width: 100%;
+            margin:20px auto;
+        } 
+        .events-main__info{
+            margin: auto;   
+        }
+   }
+}
+@media (min-width: 600px) and (max-width: 785px){
+   
+   .header{
+       justify-content: space-evenly;
+        .header__menu-icon{
+            display: block;
+            color: white;
+        }
+        .header__search{
+            width: 280px;
+        }
+        .search-input__icon2{
+            display: none;
+        }
+        .search-input__icon{
+            display: none;
+        }
+        .header__nav{
+            display: none;
+        }
+   }
+   main{
+       flex-wrap: wrap;
+       .main__left-side, .main__center, .main__right-side{
+            width: 50%;
+       }
+       .events, .mails, .contacts, .notifications, .projects{
+            width: 50%;
+            margin:20px;
+            min-width: 260px;
+        } 
+   }
+}
+@media (min-width: 320px) and (max-width: 599px){
+    .header{
+        color:white;
+        .header__menu-icon{
+            display: block;
+            font-size: 0.5em;
+            color: white;
+        }
+        .header-logo__img{
+            display: none;
+        }
+        .logo-mobile__img{
+            display: block;
+        }
+        .header__search{
+            display: none;
+            .header-search__input{
+                display: none;
+            }
+            .search-input__icon2{
+                display: block;
+                     
+            }
+        }
+        .search-input__icon{
+            display: block;
+        }
+        .header__nav{
+            display: none;
         }
     }
     main{
-        flex-wrap: nowrap;
-        margin-right: 15px;
-
-        .events, .mails, .contacts, .notifications, .projects{
-            width: 30%;
-
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 0;
+        .main__left-side, .main__center, .main__right-side{
+            margin-bottom: 20px;
+            
         }
-        .mails{
-            .user-mail__text{
-                width: 100%;
-            }
-        }
-        
-        .projects-nav{
-            .projects-nav__list{
-                width: 100%;
-                justify-content: space-evenly;
-                .nav-list__link{
-                    padding: 10px;
-                    font-size: 1em;
-                }
-            }
-        }
-        .projects-container__single{
-            margin: 10px 0;
-            .container-single__buttons{
+       .events, .mails, .contacts, .notifications, .projects{
+            min-width: 270px;
+            margin-top: 0;
+            margin-bottom: 20px;
+       }
+       .notifications-main__todo{
+           .main-todo__container{
+               .todo-container__title{
+                   font-size: 0.9rem;
+                   font-weight: bolder;
+                   margin-bottom: 5px; 
+               }
+               .todo-container__text{
+                   font-size: 0.8em;
+               }
+               .todo-container__text-2{
+                   width: 100%;
+                   min-width: 125px;
+                   padding-left: 5px;
+               }
+           }
+           
+       }
+       .projects{
+            .todo-container__title{
                 width: 100%;
                 .single-button{
-                    margin: 5px 10px;
+                    padding: 0;
+                    font-size: 0.5em;
                 }
 
             }
         }
-
-
 
     }
 }
