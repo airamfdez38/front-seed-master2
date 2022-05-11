@@ -1,4 +1,7 @@
 @media (min-width:1024px) and (max-width: 1279px){
+    body{
+        background-position-y: 20%;
+    }
     .header{
         justify-content: space-around;
         .header__search{
@@ -26,7 +29,11 @@
    }
 }
 @media (min-width: 786px) and (max-width: 1023px){
-   .header{
+    body{
+        background-size: 100% 500%;
+        background-position-y: 5%;
+    }
+    .header{
        justify-content: space-evenly;
         .header__menu-icon{
             display: block;
@@ -69,8 +76,11 @@
         }
    }
 }
-@media (min-width: 600px) and (max-width: 785px){
-   
+@media (min-width: 600px) and (max-width: 786px){
+   body{
+        background-size: 100% 800%;
+        background-position-y: 2%;
+   }
    .header{
        justify-content: space-evenly;
         .header__menu-icon{
@@ -136,12 +146,12 @@
     main{
         flex-wrap: wrap;
         flex-direction: column;
-        margin: 0;
+        justify-content: center;
         .main__left-side, .main__center, .main__right-side{
-            margin-bottom: 20px;
-            
+            margin-bottom: 20px;  
         }
        .events, .mails, .contacts, .notifications, .projects{
+            width: 100%;
             min-width: 270px;
             margin-top: 0;
             margin-bottom: 20px;
@@ -168,7 +178,6 @@
             .todo-container__title{
                 width: 100%;
                 .single-button{
-                    padding: 0;
                     font-size: 0.5em;
                 }
 

@@ -23,6 +23,9 @@
         height: 50px;
         display: none;
    }
+   .search-input__icon2{
+        display: none;
+    }
    .header__search{
        display: flex;
        flex-direction: row;
@@ -40,8 +43,9 @@
             color: rgb(199, 196, 196);
         }
         .search-input__icon{
-            display: none;
+            display: block;
         }
+        
    }
    
    .header__nav{
