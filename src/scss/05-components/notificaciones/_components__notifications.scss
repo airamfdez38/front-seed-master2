@@ -1,7 +1,7 @@
 .notifications{
     width: 20%;
     @extend .dimensions;
-    min-width: 350px;
+    min-width: 300px;
 
     .notifications__header{
         @extend .card__header;

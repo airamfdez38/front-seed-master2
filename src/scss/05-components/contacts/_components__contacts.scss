@@ -1,7 +1,7 @@
 .contacts{
     @extend .dimensions;
     width: 20%;
-    min-width: 350px;
+    min-width: 300px;
 
     .contacts__header{
         @extend .card__header;

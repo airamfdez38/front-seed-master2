@@ -9,13 +9,14 @@ body{
     main{
         display: flex;
         flex-direction: row;
-        margin: 60px 30px;
+        justify-content: space-evenly;
+        margin:40px;
         align-items: flex-start;
         .main__left-side, .main__center, .main__right-side{
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: space-between;
+            justify-content: space-around;
             height: auto;
 
 

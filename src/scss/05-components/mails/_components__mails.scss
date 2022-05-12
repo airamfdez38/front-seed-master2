@@ -1,7 +1,7 @@
 .mails{
     @extend .dimensions;
     width: 52%;
-    min-width: 850px;
+    min-width: 750px;
     .mails__header{
         @extend .card__header;
         .mails-header__left{

@@ -37,8 +37,8 @@
 
 @media (min-width: 786px) and (max-width: 1023px) {
   body {
-    background-size: 100% 500%;
-    background-position-y: 5%;
+    background-size: 100% 600%;
+    background-position-y: 20%;
   }
   .header {
     -webkit-box-pack: space-evenly;
@@ -93,7 +93,7 @@
 @media (min-width: 600px) and (max-width: 786px) {
   body {
     background-size: 100% 800%;
-    background-position-y: 2%;
+    background-position-y: 25%;
   }
   .header {
     -webkit-box-pack: space-evenly;
@@ -120,13 +120,22 @@
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  main .main__left-side, main .main__center, main .main__right-side {
+  main .main__left-side, main .main__center {
     width: 50%;
+  }
+  main .main__right-side {
+    width: 100%;
   }
   main .events, main .mails, main .contacts, main .notifications, main .projects {
     width: 50%;
     margin: 20px;
     min-width: 260px;
+  }
+  main .contacts {
+    justify-self: flex-start;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin: 0;
   }
 }
 
@@ -9521,7 +9530,10 @@ body main {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin: 60px 30px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 40px;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -9538,15 +9550,14 @@ body main .main__left-side, body main .main__center, body main .main__right-side
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   height: auto;
 }
 
 .events {
   width: 20%;
-  min-width: 350px;
+  min-width: 300px;
   margin-bottom: 40px;
 }
 
@@ -9634,7 +9645,7 @@ body main .main__left-side, body main .main__center, body main .main__right-side
 
 .mails {
   width: 52%;
-  min-width: 850px;
+  min-width: 750px;
 }
 
 .mails .mails__header .fa-ellipsis-vertical {
@@ -9696,7 +9707,7 @@ body main .main__left-side, body main .main__center, body main .main__right-side
 
 .contacts {
   width: 20%;
-  min-width: 350px;
+  min-width: 300px;
 }
 
 .contacts .contacts__header .fa-ellipsis-vertical {
@@ -9805,7 +9816,7 @@ body main .main__left-side, body main .main__center, body main .main__right-side
 
 .notifications {
   width: 20%;
-  min-width: 350px;
+  min-width: 300px;
 }
 
 .notifications .notifications__header .fa-ellipsis-vertical {
@@ -10051,7 +10062,7 @@ body main .main__left-side, body main .main__center, body main .main__right-side
 
 .projects {
   width: 52%;
-  min-width: 850px;
+  min-width: 750px;
   margin-top: 40px;
 }
 
