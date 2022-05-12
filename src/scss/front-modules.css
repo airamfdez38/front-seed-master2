@@ -26,12 +26,31 @@
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
-  .events, .mails, .contacts, .notifications, .projects {
-    width: 30%;
-    min-width: 300px;
+  main {
+    padding: 30px;
   }
-  .container-single__buttons {
+  main .events, main .notifications, main .contacts {
+    width: 22%;
+    min-width: 120%;
+  }
+  main .mails, main .projects {
+    width: 45%;
+    min-width: 70%;
+  }
+  main .container-single__buttons {
     width: 100%;
+  }
+  main .notifications .notifications-main__todo {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  main .notifications .notifications-main__todo .main-todo__container {
+    margin: 0;
+  }
+  main .notifications .notifications-main__todo .main-todo__check {
+    margin: 0;
   }
 }
 
@@ -128,18 +147,23 @@
   }
   main .events, main .mails, main .contacts, main .notifications, main .projects {
     width: 50%;
-    margin: 20px;
+    margin: 10px;
     min-width: 260px;
+    max-width: 260px;
   }
   main .contacts {
     justify-self: flex-start;
     -ms-flex-item-align: start;
         align-self: flex-start;
-    margin: 0;
+    margin-left: 50px;
   }
 }
 
 @media (min-width: 320px) and (max-width: 599px) {
+  body {
+    background-size: 100% 600%;
+    background-position-y: 20%;
+  }
   .header {
     color: white;
   }
@@ -182,9 +206,9 @@
   }
   main .main__left-side, main .main__center, main .main__right-side {
     margin-bottom: 20px;
+    width: 100%;
   }
   main .events, main .mails, main .contacts, main .notifications, main .projects {
-    width: 100%;
     min-width: 270px;
     margin-top: 0;
     margin-bottom: 20px;
@@ -9522,6 +9546,11 @@ body {
   padding: 0;
 }
 
+body .header {
+  margin: 0;
+  padding: 0;
+}
+
 body main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9530,10 +9559,9 @@ body main {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  margin: 40px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 40px 20px;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -9557,7 +9585,7 @@ body main .main__left-side, body main .main__center, body main .main__right-side
 
 .events {
   width: 20%;
-  min-width: 300px;
+  min-width: 90%;
   margin-bottom: 40px;
 }
 
@@ -9644,8 +9672,8 @@ body main .main__left-side, body main .main__center, body main .main__right-side
 }
 
 .mails {
-  width: 52%;
-  min-width: 750px;
+  width: 45%;
+  min-width: 90%;
 }
 
 .mails .mails__header .fa-ellipsis-vertical {
@@ -9707,7 +9735,7 @@ body main .main__left-side, body main .main__center, body main .main__right-side
 
 .contacts {
   width: 20%;
-  min-width: 300px;
+  min-width: 100%;
 }
 
 .contacts .contacts__header .fa-ellipsis-vertical {
@@ -9816,7 +9844,7 @@ body main .main__left-side, body main .main__center, body main .main__right-side
 
 .notifications {
   width: 20%;
-  min-width: 300px;
+  min-width: 90%;
 }
 
 .notifications .notifications__header .fa-ellipsis-vertical {

@@ -6,11 +6,15 @@ body{
     background-position-y: 30%;
     margin: 0;
     padding: 0;
+    .header{
+        margin: 0;
+        padding: 0;
+    }
     main{
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
-        margin:40px;
+        justify-content: space-around;
+        margin:40px 20px;
         align-items: flex-start;
         .main__left-side, .main__center, .main__right-side{
             display: flex;
