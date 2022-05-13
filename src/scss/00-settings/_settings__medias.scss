@@ -196,13 +196,12 @@
             align-self: flex-start;
             margin-left: 50px;
         }
-        .notifications__main{
-            .notifications-main__todo{
-                display: none;
-            }
-            .notifications-main__todo-600{
-                display:block;
-            }
+        
+        .notifications-main__todo{
+            display: none !important;
+        }
+        .notifications-main__todo-600{
+            display:block !important;
         }
       
         .projects__container{

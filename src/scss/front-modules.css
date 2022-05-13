@@ -207,11 +207,11 @@
         align-self: flex-start;
     margin-left: 50px;
   }
-  main .notifications__main .notifications-main__todo {
-    display: none;
+  main .notifications-main__todo {
+    display: none !important;
   }
-  main .notifications__main .notifications-main__todo-600 {
-    display: block;
+  main .notifications-main__todo-600 {
+    display: block !important;
   }
   main .projects__container {
     -webkit-box-pack: justify;
