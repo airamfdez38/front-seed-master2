@@ -31,22 +31,45 @@
              width: 45%;
              min-width: 70%;
         }
-        .container-single__buttons{
-            width: 100%;
-        }
-        .notifications{
-            .notifications-main__todo{
-              justify-content: space-between;
-              width: 100%;
-                .main-todo__container{
-                   margin: 0; 
+        .projects__container{
+            justify-content: space-between;
+            .projects-container__single{
+                margin: 0;
+                .container-single__buttons{
+                    width: 100%;
+                    min-width: 280px;
+                    .single-button{
+                       padding: 3px;
+                    }
                 }
-                .main-todo__check{
-                    margin: 0;
-                }
-
-
             }
+            
+        }
+       
+        .notifications{
+            .notifications__main{
+                .notifications-main__todo{
+                  justify-content: space-between;
+                  width: 100%;
+                    .main-todo__container{
+                       margin: 0; 
+                       .todo-container__title{
+                           font-size: 1rem;
+                       }
+                       .todo-container__deadline{
+                           width: 60%;
+                       }
+    
+                    }
+                    .main-todo__check{
+                        margin: 15px 5px;
+                    }
+                }
+                .notifications-main__todo-600{
+                    display:none;
+                }
+            }
+            
         }
     }
    
@@ -97,6 +120,37 @@
         .events-main__info{
             margin: auto;   
         }
+        .main-todo__container{
+            
+            .notifications-main__todo-600{
+                display:none;
+            }
+        }
+       
+        .projects__container{
+            justify-content: space-between;
+            .projects-container__single{
+                margin: 0;
+                .container-single__buttons{
+                    width: 100%;
+                    min-width: 250px;
+                    .single-button{
+                       padding: 3px;
+                    }
+                }
+            }   
+        }
+        .contact__main{
+            justify-content: center;
+            .contact-main__container{
+                width: 100%;
+                justify-content: center;
+
+            }
+
+        }
+
+
    }
 }
 @media (min-width: 600px) and (max-width: 786px){
@@ -141,6 +195,29 @@
             justify-self: flex-start;
             align-self: flex-start;
             margin-left: 50px;
+        }
+        .notifications__main{
+            .notifications-main__todo{
+                display: none;
+            }
+            .notifications-main__todo-600{
+                display:block;
+            }
+        }
+      
+        .projects__container{
+            justify-content: space-between;
+            .projects-container__single{
+                margin: 0;
+                .container-single__buttons{
+                    width: 100%;
+                    min-width: 230px;
+                    .single-button{
+                       padding: 3px;
+                    }
+                }
+            }
+            
         }
         
         
@@ -191,11 +268,14 @@
         }
        .events, .mails, .contacts, .notifications, .projects{
             
-            min-width: 270px;
+            min-width: 290px;
             margin-top: 0;
             margin-bottom: 20px;
        }
        .notifications-main__todo{
+            .notifications-main__todo-600{
+                display:none;
+            }
            .main-todo__container{
                .todo-container__title{
                    font-size: 0.9rem;
@@ -213,14 +293,20 @@
            }
            
        }
-       .projects{
-            .todo-container__title{
-                width: 100%;
-                .single-button{
-                    font-size: 0.5em;
+     
+        .projects__container{
+            justify-content: space-between;
+            .projects-container__single{
+                margin: 0;
+                .container-single__buttons{
+                    width: 100%;
+                    min-width: 230px;
+                    .single-button{
+                       padding: 3px;
+                    }
                 }
-
             }
+            
         }
 
     }

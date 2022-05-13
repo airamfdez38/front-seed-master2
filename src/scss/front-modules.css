@@ -37,20 +37,41 @@
     width: 45%;
     min-width: 70%;
   }
-  main .container-single__buttons {
-    width: 100%;
+  main .projects__container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
-  main .notifications .notifications-main__todo {
+  main .projects__container .projects-container__single {
+    margin: 0;
+  }
+  main .projects__container .projects-container__single .container-single__buttons {
+    width: 100%;
+    min-width: 280px;
+  }
+  main .projects__container .projects-container__single .container-single__buttons .single-button {
+    padding: 3px;
+  }
+  main .notifications .notifications__main .notifications-main__todo {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
     width: 100%;
   }
-  main .notifications .notifications-main__todo .main-todo__container {
+  main .notifications .notifications__main .notifications-main__todo .main-todo__container {
     margin: 0;
   }
-  main .notifications .notifications-main__todo .main-todo__check {
-    margin: 0;
+  main .notifications .notifications__main .notifications-main__todo .main-todo__container .todo-container__title {
+    font-size: 1rem;
+  }
+  main .notifications .notifications__main .notifications-main__todo .main-todo__container .todo-container__deadline {
+    width: 60%;
+  }
+  main .notifications .notifications__main .notifications-main__todo .main-todo__check {
+    margin: 15px 5px;
+  }
+  main .notifications .notifications__main .notifications-main__todo-600 {
+    display: none;
   }
 }
 
@@ -107,6 +128,35 @@
   main .events-main__info {
     margin: auto;
   }
+  main .main-todo__container .notifications-main__todo-600 {
+    display: none;
+  }
+  main .projects__container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  main .projects__container .projects-container__single {
+    margin: 0;
+  }
+  main .projects__container .projects-container__single .container-single__buttons {
+    width: 100%;
+    min-width: 250px;
+  }
+  main .projects__container .projects-container__single .container-single__buttons .single-button {
+    padding: 3px;
+  }
+  main .contact__main {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .contact__main .contact-main__container {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 @media (min-width: 600px) and (max-width: 786px) {
@@ -156,6 +206,27 @@
     -ms-flex-item-align: start;
         align-self: flex-start;
     margin-left: 50px;
+  }
+  main .notifications__main .notifications-main__todo {
+    display: none;
+  }
+  main .notifications__main .notifications-main__todo-600 {
+    display: block;
+  }
+  main .projects__container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  main .projects__container .projects-container__single {
+    margin: 0;
+  }
+  main .projects__container .projects-container__single .container-single__buttons {
+    width: 100%;
+    min-width: 230px;
+  }
+  main .projects__container .projects-container__single .container-single__buttons .single-button {
+    padding: 3px;
   }
 }
 
@@ -209,9 +280,12 @@
     width: 100%;
   }
   main .events, main .mails, main .contacts, main .notifications, main .projects {
-    min-width: 270px;
+    min-width: 290px;
     margin-top: 0;
     margin-bottom: 20px;
+  }
+  main .notifications-main__todo .notifications-main__todo-600 {
+    display: none;
   }
   main .notifications-main__todo .main-todo__container .todo-container__title {
     font-size: 0.9rem;
@@ -226,11 +300,20 @@
     min-width: 125px;
     padding-left: 5px;
   }
-  main .projects .todo-container__title {
-    width: 100%;
+  main .projects__container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
-  main .projects .todo-container__title .single-button {
-    font-size: 0.5em;
+  main .projects__container .projects-container__single {
+    margin: 0;
+  }
+  main .projects__container .projects-container__single .container-single__buttons {
+    width: 100%;
+    min-width: 230px;
+  }
+  main .projects__container .projects-container__single .container-single__buttons .single-button {
+    padding: 3px;
   }
 }
 
@@ -9857,6 +9940,10 @@ body main .main__left-side, body main .main__center, body main .main__right-side
           box-shadow: 0px 1px 1px 1px #aaa9a9;
 }
 
+.notifications .notifications__main .notifications-main__todo-600 {
+  display: none;
+}
+
 .notifications .notifications__main .notifications-main__todo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9897,7 +9984,8 @@ body main .main__left-side, body main .main__center, body main .main__right-side
 }
 
 .notifications .notifications__main .notifications-main__todo .todo-container__deadline {
-  width: 60%;
+  width: 70%;
+  min-width: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

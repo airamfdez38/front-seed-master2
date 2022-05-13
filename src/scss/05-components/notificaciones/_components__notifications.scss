@@ -20,6 +20,10 @@
         @extend .card__main;
         border-radius: 0px 0px 5px 5px;
         box-shadow: 0px 1px 1px 1px rgb(170, 169, 169);
+        .notifications-main__todo-600{
+            display:none;
+        }
+
         .notifications-main__todo{
             display: flex;
             flex-direction: row;
@@ -44,7 +48,8 @@
 
             }
             .todo-container__deadline{
-                width: 60%;
+                width: 70%;
+                min-width: 120px;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
